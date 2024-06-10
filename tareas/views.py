@@ -2,7 +2,6 @@ from rest_framework import generics, permissions
 from django.contrib.auth.models import User
 from .models import Tarea
 from .serializers import TareaSerializer, UserSerializer
-from rest_framework_simplejwt.authentication import TokenObtainPairView, TokenRefreshView
 
 # Create your views here.
 class UserCreateView(generics.CreateAPIView):
